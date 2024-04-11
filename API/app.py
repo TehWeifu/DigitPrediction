@@ -64,7 +64,7 @@ def predict():
     image_raw = read_image(image_request)
     image_clean = prepare_image(image_raw)
 
-    prediction = model.predict(image_clean)
+    prediction = model.predict(image_clean, verbose=False)
 
     return build_prediction_response(prediction)
 
