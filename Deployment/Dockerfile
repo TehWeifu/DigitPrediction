@@ -17,7 +17,7 @@ RUN apk add --no-cache gcc musl-dev libffi-dev \
 EXPOSE 5000
 
 # Define environment variable
-ENV FLASK_APP=myapp.py
+ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 # Run myapp.py when the container launches
