@@ -30,7 +30,7 @@ except Exception as e:
 
 @app.route('/')
 def index():
-    with open('tests/index.html', 'r', encoding='utf-8') as file:
+    with open('tests/index.html', 'r', encoding='UTF-8') as file:
         html_content = file.read()
 
     return html_content
