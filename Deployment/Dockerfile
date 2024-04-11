@@ -5,7 +5,7 @@ FROM python:3.12-alpine
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY .. /app
 
 # Install any needed packages specified in requirements.txt
 # Add build dependencies for certain Python packages if necessary
