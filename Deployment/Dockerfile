@@ -5,7 +5,7 @@ FROM python:3.12-alpine
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY .. /app
+COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
@@ -17,5 +17,5 @@ EXPOSE 5000
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
-# Run myapp.py when the container launches
+# Run app.py when the container launches
 CMD ["flask", "run"]
