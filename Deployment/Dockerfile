@@ -15,7 +15,7 @@ RUN pip install opencv-python
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
-ENV FLASK_APP=app.py
+ENV FLASK_APP=./API/app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
 CMD ["flask", "run"]
